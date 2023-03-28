@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# Linear Issues Tree Graph
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a small app, that renders you a tree-graph representation of your Linear project.
+App url: [https://linear-tree-graph.netlify.app/](https://linear-tree-graph.netlify.app/)
 
-## Available Scripts
+<img width="1496" alt="Screenshot 2023-03-28 at 14 37 09" src="https://user-images.githubusercontent.com/6353350/228238132-7abd3c6e-d908-474d-bd3e-b2489eafb563.png">
 
-In the project directory, you can run:
 
-### `npm start`
+## Get started
+### Linear API key
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### Generate and use the key
+To use the app you need to get your Linear API key.
+To get it:
+1. Click on your Avatar in top-left corner -> Settings (G then S shortcut)
+2. Go to Account -> API in the left nav
+3. Scroll down to Personal API Keys
+4. Use some name - "Graph Tree" and generate the key
+5. Bonus points: save your API key in 1Password
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+See in in action:
+![ezgif com-video-to-gif(1)](https://user-images.githubusercontent.com/6353350/228237363-f16ed43e-3df6-40f4-b28d-795ade679662.gif)
 
-### `npm test`
+To use the key in the app:
+1. Click the cog icon in top right
+2. Enter the key
+3. Close the drawer
+4. Reload the page
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Is it safe to enter my key to the app?
+This is a client-side React app. It doesn't store your key on any servers. The key lives in your browser local storage.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
