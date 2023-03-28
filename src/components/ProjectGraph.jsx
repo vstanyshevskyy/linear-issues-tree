@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./App.css";
-import linearClient from "./linear-client";
+import getClient from "../lib/linear-client";
 import { DecompositionTreeGraph } from "@ant-design/graphs";
 
 
@@ -52,6 +51,7 @@ const Graph = ({projectId}) => {
 
   useEffect(() => {
     const fetchProject = async () => {
+      const linearClient = getClient()
       const projectInfo = await linearClient.client.rawRequest(`
         query Project($id: String!){
           project(id: $id) {
@@ -81,7 +81,6 @@ const Graph = ({projectId}) => {
       setProject(projectInfo)
     }
     if (projectId) {
-      console.log(projectId)
       fetchProject(projectId)
     }
   }, [projectId])

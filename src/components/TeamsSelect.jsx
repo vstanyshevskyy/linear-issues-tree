@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import linearClient from "./linear-client";
+import getClient from "../lib/linear-client";
 
 import { Select } from "antd";
 
@@ -18,6 +18,7 @@ function TeamsSelect({ onTeamChange }) {
     const getTeams = async () => {
       setIsLoading(true);
       try {
+        const linearClient = getClient()
         const me = await linearClient.viewer;
         const myTeams = await me.teams();
         setResults(mapTeamToSelectOptions(myTeams.nodes));
